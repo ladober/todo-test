@@ -54,23 +54,7 @@ todo.addEventListener("change", function (event) {
   });
 });
 
-function delBtn() {}
-
 todo.addEventListener("click", function (event) {
-  delBtn = event.target.innerHTML;
-
-  console.log(delBtn);
-  listToAdd.forEach(function (item, i) {
-    if (item.button === delBtn) {
-      listToAdd.splice(i, 1);
-    }
-  });
-});
-
-todo.addEventListener("click", function (event) {
-  let deleteBtn = event.target;
-
-  console.log(deleteBtn);
   listToAdd.forEach(function (item, i) {
     if (item.todo === event.target.innerHTML) {
       listToAdd.splice(i, 1);
